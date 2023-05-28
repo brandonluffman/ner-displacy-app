@@ -13,6 +13,7 @@
     text-align: center;
     justify-content: center;
     width:100%;
+    display:flex;
 }
 .text-input {
     width:90%;
@@ -28,35 +29,7 @@
     padding:0.5rem;
 }
 
-.brand-highlight {
-    background-color: white;
-    color:red;
-    border:1px solid red;
-    text-align: center;
-    justify-content: center;
-    display: inline-flex;
-    position: relative;
-    align-items: center;
-    border-radius: 20px;
-    padding:0.3rem 1rem;
-    margin:0.2rem 0.1rem;
-}
-.entity-highlight {
-    background-color: red;
-    color:white;
-    border:1px solid white;
-    text-align: center;
-    justify-content: center;
-    display: inline-flex;
-    position: relative;
-    align-items: center;
-    border-radius: 20px;
-    padding:0.3rem 1rem;
-    margin:0.2rem 0.1rem;
-}
-.product-highlight {
-    background-color: rgb(76, 129, 220);
-    color:white;
+.brand-highlight, .entity-highlight, .org-highlight, .gpe-highlight, .person-highlight, .norp-highlight, .time-highlight, .date-highlight, .product-highlight {
     text-align: center;
     justify-content: center;
     display: inline-flex;
@@ -65,7 +38,53 @@
     border-radius: 20px;
     padding:0rem 0.7rem;
     margin:0.2rem 0.1rem;
-    border:1px solid #dedede;
+}
+
+.brand-highlight {
+    background-color: white;
+    color:red;
+    border:1px solid red;
+}
+
+.entity-highlight {
+    background-color: red;
+    color:white;
+    border:1px solid white;
+
+}
+.org-highlight {
+    background-color: red;
+    color:white;
+    border:1px solid white;
+}
+.gpe-highlight {
+    background-color: red;
+    color:white;
+    border:1px solid white;
+}
+.person-highlight {
+    background-color: red;
+    color:white;
+    border:1px solid white;
+}
+.norp-highlight {
+    background-color: red;
+    color:white;
+    border:1px solid white;
+}
+.time-highlight {
+    background-color: red;
+    color:white;
+    border:1px solid white;
+}
+.date-highlight {
+    background-color: red;
+    color:white;
+    border:1px solid white;
+}
+.product-highlight {
+    background-color: rgb(76, 129, 220);
+    color:white;
 }
 .entity-text {
     margin-right:0.5rem;
@@ -112,6 +131,9 @@
     }
     .response-sentence > span {
         width:100% !important;
-        display: flex;
+    }
+
+    .response-sentence {
+        padding:0rem 1rem;
     }
   }
