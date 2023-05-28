@@ -64,6 +64,7 @@ export default function Home(data) {
   return (
     <div className='home-container'>
       <form className='home-form' onSubmit={handleSubmit}>
+        <div className='what'>
         <div>
         <textarea
           type="text"
@@ -72,8 +73,10 @@ export default function Home(data) {
           onChange={(e) => setInputText(e.target.value)}
         />
         </div>
-        
+        <div>
         <button className='home-submit-btn' type="submit">Analyze Text</button>
+        </div>
+        </div>
       </form>
         {/* <fieldset>
         <legend>Please select one of the following</legend>
